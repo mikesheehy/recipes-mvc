@@ -7,8 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class RecipeController {
 	@RequestMapping ("/")
-	@ResponseBody
 	public String listRecipes() {
-		return "List of all recipes";
+		return "home";
 	}
 }
