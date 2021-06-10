@@ -46,8 +46,8 @@
     <div class="recipe-detail container">
         <div class="frame row">
             <div class="col s12">
-                <img th:src="@{'/images/' + ${recipe.name} + '.jpg'}" alt="nachos" />
-                <a href="#" class="mark favorite"></a>
+                <img th:src="@{'/images/' + ${recipe.name} + '.jpg'}" alt="nachos" width="800px"/>
+                <a href="#" th:class="(${recipe.favorite} ? 'un' : '') + 'mark favorite'"></a>
             </div>
         </div>
         <div class="row">
@@ -57,8 +57,8 @@
                         <img class="circle" src="http://api.adorable.io/avatars/205/avatar" alt="avatar" />
                     </div>
                     <div class="col s9">
-                        <h4>Mike Sheehy</h4>
-                        <p>Uploaded on March 15 2021</p>
+                        <h4 th:text="${recipe.username}">Mike Sheehy</h4>
+                        <p th:text="'Uploaded on ' + ${recipe.dateUploaded}">Uploaded on March 15 2021</p>
                     </div>
                 </div>
             </div>
