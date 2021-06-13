@@ -28,5 +28,9 @@ public class RecipeRepository {
 		}
 		return null;
 	}
+
+	public List<Recipe> getAllRecipes(){
+		return ALL_RECIPES;
+	}
 	
 }

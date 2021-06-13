@@ -1,6 +1,7 @@
 package com.mikesheehy.recipes.controller;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,10 +19,12 @@ public class RecipeController {
 	private RecipeRepository recipeRepository;
 	
 	@RequestMapping ("/")
-	public String listRecipes() {
+	public String listRecipes(ModelMap modelMap) {
+		List<Recipe> allRecipes = recipeRepository.getAllRecipes();
+		modelMap.put("recipes",allRecipes);
 		return "home";
 	}
-	// URL => localhost:8080/recipe/nachos
+	
 	@RequestMapping ("/recipe/{name}")
 	public String recipeDetails(@PathVariable String name, ModelMap modelMap) {
 		Recipe recipe = recipeRepository.findByName(name);
