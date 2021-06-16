@@ -46,7 +46,7 @@
     <div class="recipe-detail container">
         <div class="frame row">
             <div class="col s12">
-                <img th:src="@{'/images/' + ${recipe.name} + '.jpg'}" alt="nachos" width="800px"/>
+                <img th:src="@{'/images/' + ${recipe.name} + '.jpg'}" alt="nachos" />
                 <a href="#" th:class="(${recipe.favorite} ? 'un' : '') + 'mark favorite'"></a>
             </div>
         </div>

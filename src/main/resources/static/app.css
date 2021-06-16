@@ -79,15 +79,15 @@ nav ul li.active, nav ul li:hover {
     color: #757378;
 }
 
-.gifs.container .col:nth-child(3n+1) {
+.recipes.container .col:nth-child(3n+1) {
     padding-left: 0;
 }
 
-.gifs.container .col:nth-child(3n+3) {
+.recipes.container .col:nth-child(3n+3) {
     padding-right: 0;
 }
 
-.gifs img {
+.recipes img {
     height: 220px;
     width: 100%;
     border-radius: 6px;
@@ -114,7 +114,7 @@ nav ul li.active, nav ul li:hover {
     border-radius: 0 6px 0 0;
 }
 
-.gif-detail .favorite {
+.recipe-detail .favorite {
     right: 0;
 }
 
@@ -126,11 +126,11 @@ nav ul li.active, nav ul li:hover {
     background: url(icons/unfavorite.png) no-repeat 0 0;
 }
 
-.gif-detail .col {
+.recipe-detail .col {
     padding-right: 0;
 }
 
-.gif-detail .frame .col {
+.recipe-detail .frame .col {
     padding: 1.5rem 5rem;
     text-align: center;
     border: 1px solid #e3e1e6;
@@ -138,19 +138,19 @@ nav ul li.active, nav ul li:hover {
     border-radius: 6px;
 }
 
-.gif-detail img {
+.recipe-detail img {
     display: inline-block;
     width: 100%;
 }
 
-.gif-detail .meta h4 {
+.recipe-detail .meta h4 {
     color: #896bb3;
     font-size: 1.25rem;
     margin-bottom: 0;
     margin-top: 0.8rem;
 }
 
-.gif-detail .meta p {
+.recipe-detail .meta p {
     margin-top: 3px;
     color: #a9a7ac;
 }
@@ -233,11 +233,11 @@ nav ul li.active, nav ul li:hover {
         width: 100%;
     }
 
-    .gifs.container {
+    .recipes.container {
         padding: 0;
     }
 
-    .gifs.container .col {
+    .recipes.container .col {
         padding: 0 0.75rem !important;
     }
 
@@ -266,33 +266,33 @@ nav ul li.active, nav ul li:hover {
         right: 1.8rem;
     }
 
-    .gifs {
+    .recipes {
         padding: 0 1.5rem;
     }
-    .gifs img {
+    .recipes img {
         width: 100%;
     }
-    .gif-detail .frame .col {
+    .recipe-detail .frame .col {
         padding: 0 1rem;
         background: none;
         border: none;
     }
-    .gif-detail .col, .gif-detail .meta {
+    .recipe-detail .col, .recipe-detail .meta {
         margin-bottom: 0.1rem;
     }
 
-    .gif-detail .col {
+    .recipe-detail .col {
         padding-right: 1rem;
     }
 
-    .gif-detail img {
+    .recipe-detail img {
         border-radius: 6px;
     }
-    .gif-detail .favorite {
+    .recipe-detail .favorite {
         right: 1rem;
     }
 
-    .gif-detail .meta .circle {
+    .recipe-detail .meta .circle {
         border-radius: 50%;
     }
 
