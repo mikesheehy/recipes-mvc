@@ -2,7 +2,7 @@ package com.mikesheehy.recipes.model;
 
 public class Category {
 	private int id;
-	private String notname;
+	private String name;
 	
 	public Category(int id, String name) {
 		this.id = id;
