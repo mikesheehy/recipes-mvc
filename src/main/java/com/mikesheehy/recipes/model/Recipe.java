@@ -3,7 +3,7 @@ package com.mikesheehy.recipes.model;
 import java.time.LocalDate;
 
 public class Recipe {
-	private String name;
+	private String notname;
 	private int categoryId;
 	private LocalDate dateUploaded;
 	private String username;
